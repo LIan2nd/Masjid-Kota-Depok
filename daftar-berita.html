@@ -205,7 +205,7 @@
 
       <!-- Main content -->
       <section class="content">
-        <button type="button" class="btn btn-success btn-lg" href="registrasi-Masjid-Akbar.html">Tambah</button>
+        <a class="btn btn-success btn-lg" href="form-berita.html">Tambah</a>
         <table class="table table-bordered table-striped table-hover text-center">
           <table class="table text-center">
             <thead>
@@ -220,7 +220,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr id="berita1">
                 <td>1</td>
                 <!-- Tanggal -->
                 <td></td>
@@ -233,25 +233,25 @@
                 <!-- Status -->
                 <td></td>
                 <!-- Action -->
-                <td></td>
+                <td><a href="" style="color: black;">Detail</a> | <a href="form-berita.html" style="color: black;">Edit</a> | <a href="" onclick="hapusBerita1()" style="color: black;">Delete</a></td>
               </tr>
-              <tr class="table-active">
+              <tr class="table-active" id="berita2">
                 <td>2</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
+                <td><a href="" style="color: black;">Detail</a> | <a href="form-berita.html" style="color: black;">Edit</a> | <a href="" onclick="hapusBerita2()" style="color: black;">Delete</a></td>
               </tr>
-              <tr>
+              <tr id="berita3">
                 <td>3</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
+                <td><a href="" style="color: black;">Detail</a> | <a href="form-berita.html" style="color: black;">Edit</a> | <a href="" onclick="hapusBerita3()" style="color: black;">Delete</a></td>
               </tr>
               <tr class="table-active">
                 <td>4</td>
@@ -322,6 +322,25 @@
         </footer>
       </div>
       <!-- footer end -->
+
+      <!-- Local Javascript -->
+      <script type="application/javascript">
+
+        let berita1 = document.getElementById("berita1");
+        let berita2 = document.getElementById("berita2");
+        let berita3 = document.getElementById("berita3");
+
+        function hapusBerita1() {
+          berita1.style.display = "none";
+        }
+        function hapusBerita2() {
+          berita2.style.display = "none";
+        }
+        function hapusBerita3() {
+          berita3.style.display = "none";
+        }
+      </script>
+      <!-- Local Javascript end -->
 
       <!-- jQuery -->
       <script src="plugins/jquery/jquery.min.js"></script>

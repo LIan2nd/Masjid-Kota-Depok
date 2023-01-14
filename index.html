@@ -205,7 +205,8 @@
 
       <!-- Main content -->
       <section class="content">
-        <button type="button" class="btn btn-success btn-lg" href="registrasi-Masjid-Akbar.html">Tambah</button>
+        <!-- <button type="button" class="btn btn-success btn-lg" href="tambah-daftar-masjid.html">Tambah</button> -->
+        <a href="tambah-daftar-masjid.html" class="btn btn-success btn-lg">Tambah</a>
         <table class="table table-bordered table-striped table-hover text-center">
           <table class="table text-center">
             <thead>
@@ -220,7 +221,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr id="masjid1">
                 <td>1</td>
                 <!-- Nama Masjid -->
                 <td>Kubah Emas</td>
@@ -233,25 +234,25 @@
                 <!-- Telpon -->
                 <td>+62 21 77880803</td>
                 <!-- Action -->
-                <td></td>
+                <td><a href="Profile-Masjid-Kubah Emas.html" style="color: black;">Detail</a> | <a href="" style="color: black;">Edit</a> | <a href="" onclick="hapusMasjid1()" style="color: black;">Delete</a></td>
               </tr>
-              <tr class="table-active">
+              <tr class="table-active" id="masjid2">
                 <td>2</td>
                 <td>At - Thohir</td>
                 <td>Tapos</td>
                 <td>Bojong Nangka</td>
                 <td>Tidak diPublish</td>
                 <td>Tidak diPublish</td>
-                <td></td>
+                <td><a href="Profile_Masjid_At-Thohir.html" style="color: black;">Detail</a> | <a href="" style="color: black;">Edit</a> | <a href="" onclick="hapusMasjid2()" style="color: black;">Delete</a></td>
               </tr>
-              <tr>
+              <tr id="masjid3">
                 <td>3</td>
                 <td>Ilhami</td>
                 <td>Sawangan</td>
                 <td>Kompleks Perumahan Villa Rizki Ilhami 2</td>
                 <td>Tidak diPublish</td>
                 <td>Tidak diPublish</td>
-                <td></td>
+                <td><a href="Profile_Masjid_Ilhami.html" style="color: black;">Detail</a> | <a href="" style="color: black;">Edit</a> | <a href="" onclick="hapusMasjid3()" style="color: black;">Delete</a></td>
               </tr>
               <tr class="table-active">
                 <td>4</td>
@@ -272,15 +273,6 @@
                 <td></td>
               </tr>
               <tr class="table-active">
-                <td>2</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
                 <td>6</td>
                 <td></td>
                 <td></td>
@@ -289,7 +281,7 @@
                 <td></td>
                 <td></td>
               </tr>
-              <tr class="table-active">
+              <tr>
                 <td>7</td>
                 <td></td>
                 <td></td>
@@ -298,8 +290,17 @@
                 <td></td>
                 <td></td>
               </tr>
-              <tr>
+              <tr class="table-active">
                 <td>8</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>9</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -322,6 +323,25 @@
         </footer>
       </div>
       <!-- footer end -->
+
+      <!-- Local Javascript -->
+      <script type="application/javascript">
+
+        let masjid1 = document.getElementById("masjid1");
+        let masjid2 = document.getElementById("masjid2");
+        let masjid3 = document.getElementById("masjid3");
+
+        function hapusMasjid1() {
+          masjid1.style.display = "none";
+        }
+        function hapusMasjid2() {
+          masjid2.style.display = "none";
+        }
+        function hapusMasjid3() {
+          masjid3.style.display = "none";
+        }
+      </script>
+      <!-- Local Javascript end -->
 
       <!-- jQuery -->
       <script src="plugins/jquery/jquery.min.js"></script>
