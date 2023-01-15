@@ -154,12 +154,6 @@
                     <p>Ilhami</p>
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a href="admin.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Daftar Masjid</p>
-                  </a>
-                </li>
               </ul>
             </li>
             <li class="nav-item">
@@ -195,7 +189,7 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="ml-5">Daftar Berita</h1>
+              <h1 class="ml-5">Daftar Masjid</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
@@ -211,53 +205,54 @@
 
       <!-- Main content -->
       <section class="content">
-        <a class="btn btn-success btn-lg" href="form-berita.html">Tambah</a>
+        <!-- <button type="button" class="btn btn-success btn-lg" href="tambah-daftar-masjid.html">Tambah</button> -->
+        <a href="tambah-daftar-masjid.html" class="btn btn-success btn-lg">Tambah</a>
         <table class="table table-bordered table-striped table-hover text-center">
           <table class="table text-center">
             <thead>
               <tr class="table-active">
                 <th>No</td>
-                <th>Tanggal</td>
-                <th>Judul Berita</td>
-                <th>Masjid</td>
-                <th>Penulis</td>
-                <th>Status</td>
+                <th>Nama Masjid</td>
+                <th>Kecamatan</td>
+                <th>Kelurahan</td>
+                <th>Ketua DKM</td>
+                <th>Telpon</td>
                 <th>Action</td>
               </tr>
             </thead>
             <tbody>
-              <tr id="berita1">
+              <tr id="masjid1">
                 <td>1</td>
-                <!-- Tanggal -->
-                <td>02 Juni 2022</td>
-                <!-- Judul berita -->
-                <td>Sejarah Masjid Kubah Emas di Depok, Sosok Pendiri, Arsitektur dan Filosofinya</td>
-                <!-- Masjid -->
-                <td>Masjid Kubah Emas</td>
-                <!-- Penulis -->
-                <td>Reza Rizki Saputra</td>
-                <!-- Status -->
-                <td>Review</td>
+                <!-- Nama Masjid -->
+                <td>Kubah Emas</td>
+                <!-- Kecamatan -->
+                <td>Limo</td>
+                <!-- Kelurahan -->
+                <td>Meruyung</td>
+                <!-- Ketua DKM -->
+                <td>Tidak diPublish</td>
+                <!-- Telpon -->
+                <td>+62 21 77880803</td>
                 <!-- Action -->
-                <td><a href="https://jabar.inews.id/berita/sejarah-masjid-kubah-emas-di-depok-sosok-pendiri-arsitektur-dan-filosofinya" style="color: black;">Detail</a> | <a href="form-berita.html" style="color: black;">Edit</a> | <a href="" onclick="hapusBerita1()" style="color: black;">Delete</a></td>
+                <td><a href="Profile-Masjid-Kubah Emas.html" style="color: black;">Detail</a> | <a href="tambah-daftar-masjid.html" style="color: black;">Edit</a> | <a href="" onclick="hapusMasjid1()" style="color: black;">Delete</a></td>
               </tr>
-              <tr class="table-active" id="berita2">
+              <tr class="table-active" id="masjid2">
                 <td>2</td>
-                <td>19 April 2022</td>
-                <td>5 Keunikan Masjid At-Thohir yang Jadi Salah Satu Destinasi Wisata di Depok</td>
                 <td>At - Thohir</td>
-                <td>Miko Alonso</td>
-                <td>Approve</td>
-                <td><a href="https://depok24jam.republika.co.id/posts/110014/5-keunikan-masjid-at-thohir-yang-jadi-salah-satu-destinasi-wisata-di-depok" style="color: black;">Detail</a> | <a href="form-berita.html" style="color: black;">Edit</a> | <a href="" onclick="hapusBerita2()" style="color: black;">Delete</a></td>
+                <td>Tapos</td>
+                <td>Bojong Nangka</td>
+                <td>Tidak diPublish</td>
+                <td>Tidak diPublish</td>
+                <td><a href="Profile_Masjid_At-Thohir.html" style="color: black;">Detail</a> | <a href="tambah-daftar-masjid.html" style="color: black;">Edit</a> | <a href="" onclick="hapusMasjid2()" style="color: black;">Delete</a></td>
               </tr>
-              <tr id="berita3">
+              <tr id="masjid3">
                 <td>3</td>
-                <td>28 September 2018</td>
-                <td>Menag Resmikan Masjid Ilhami Sawangan Depok</td>
                 <td>Ilhami</td>
-                <td>Kementrian Agama RI</td>
-                <td>Draft</td>
-                <td><a href="https://kemenag.go.id/read/menag-resmikan-masjid-ilhami-sawangan-depok-yzor0" style="color: black;">Detail</a> | <a href="form-berita.html" style="color: black;">Edit</a> | <a href="" onclick="hapusBerita3()" style="color: black;">Delete</a></td>
+                <td>Sawangan</td>
+                <td>Kompleks Perumahan Villa Rizki Ilhami 2</td>
+                <td>Tidak diPublish</td>
+                <td>Tidak diPublish</td>
+                <td><a href="Profile_Masjid_Ilhami.html" style="color: black;">Detail</a> | <a href="tambah-daftar-masjid.html" style="color: black;">Edit</a> | <a href="" onclick="hapusMasjid3()" style="color: black;">Delete</a></td>
               </tr>
               <tr class="table-active">
                 <td>4</td>
@@ -332,18 +327,18 @@
       <!-- Local Javascript -->
       <script type="application/javascript">
 
-        let berita1 = document.getElementById("berita1");
-        let berita2 = document.getElementById("berita2");
-        let berita3 = document.getElementById("berita3");
+        let masjid1 = document.getElementById("masjid1");
+        let masjid2 = document.getElementById("masjid2");
+        let masjid3 = document.getElementById("masjid3");
 
-        function hapusBerita1() {
-          berita1.style.display = "none";
+        function hapusMasjid1() {
+          masjid1.style.display = "none";
         }
-        function hapusBerita2() {
-          berita2.style.display = "none";
+        function hapusMasjid2() {
+          masjid2.style.display = "none";
         }
-        function hapusBerita3() {
-          berita3.style.display = "none";
+        function hapusMasjid3() {
+          masjid3.style.display = "none";
         }
       </script>
       <!-- Local Javascript end -->

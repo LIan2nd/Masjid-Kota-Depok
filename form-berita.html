@@ -154,6 +154,12 @@
                     <p>Ilhami</p>
                   </a>
                 </li>
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Daftar Masjid</p>
+                  </a>
+                </li>
               </ul>
             </li>
             <li class="nav-item">
@@ -189,11 +195,11 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="ml-5">Daftar Berita</h1>
+              <h1 class="ml-5">Form Berita</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item"><a href="landing-page.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Admin</a></li>
                 <li class="breadcrumb-item active">Kelola Masjid</li>
               </ol>
@@ -204,8 +210,111 @@
       <!-- /.content-header -->
 
       <!-- Main content -->
-      <section class="content">
-        
+      <section class="content d-flex justify-content-center">
+        <div class="container m-1 p-3">
+          <div class="row m-3">
+            <div class="col-lg-2">
+              <div class="text-lg-right mr-3">
+                <label for="namaMasjid">Nama Masjid</label>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <input class="form-control" type="text" name="namaMasjid" id="namaMasjid" style="border-color: black;">
+            </div>
+          </div>
+          <div class="row m-3">
+            <div class="col-lg-2">
+              <div class="text-lg-right mr-3">
+                <label for="judul">Judul Berita</label>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <input class="form-control" type="text" name="judul" id="judul" style="border-color: black;">
+            </div>
+          </div>
+          <div class="row m-3">
+            <div class="col-lg-2">
+              <div class="text-lg-right mr-3">
+                <label for="berita">Isi Berita</label>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <textarea name="berita" id="berita" rows="10" class="form-control"
+                style="border-color: black;"></textarea>
+            </div>
+          </div>
+          <div class="row m-3">
+            <div class="col-lg-2">
+              <div class="text-lg-right mr-3">
+                <label for="penulis">Penulis</label>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <input class="form-control" type="text" name="penulis" id="penulis" style="border-color: black; width: 50%;">
+            </div>
+          </div>
+          <div class="row m-3">
+            <div class="col-lg-2">
+              <div class="text-lg-right mr-3">
+                <label for="judul">Tanggal Terbit</label>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <input class="form-control" type="date" name="judul" id="judul"
+                style="border-color: black; width: 150px;">
+            </div>
+          </div>
+          <div class="row m-3">
+            <div class="col-lg-2">
+              <div class="text-lg-right mr-3">
+                <label for="judul">Status Berita</label>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <div class="form-check form-check-inline mr-5">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Draft" value="draft">
+                <label class="form-check-label" for="Draft">Draft</label>
+              </div>
+              <div class="form-check form-check-inline mr-5">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Submit" value="submit">
+                <label class="form-check-label" for="Submit">Submit</label>
+              </div>
+              <div class="form-check form-check-inline mr-5">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="review" value="review">
+                <label class="form-check-label" for="review">Review</label>
+              </div>
+              <div class="form-check form-check-inline mr-5">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Reject" value="reject">
+                <label class="form-check-label" for="Reject">Reject</label>
+              </div>
+              <div class="form-check form-check-inline mr-5">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Approve" value="approve">
+                <label class="form-check-label" for="Approve">Approve</label>
+              </div>
+            </div>
+          </div>
+          <div class="row m-3">
+            <div class="col-lg-2"></div>
+              <div class="col-lg-1 mr-3 mt-3 mb-3">
+                  <div class="text-lg-center">
+                      <button type="submit" class="btn btn-success"
+                          style="width: 100px; border-color: black;">Simpan</button>
+                  </div>
+              </div>
+              <div class="col-lg-1 mr-3 mt-3 mb-3">
+                <div class="text-lg-center">
+                  <button type="submit" class="btn btn-primary"
+                      style="width: 100px; border-color: black;">Update</button>
+                </div>
+              </div>
+              <div class="col-lg-1 mr-3 mt-3 mb-3">
+                <div class="text-lg-center">
+                  <a type="reset" class="btn btn-danger" href="daftar-berita.html"
+                      style="width: 100px; border-color: black;">Batal</a>
+                </div>
+              </div>
+          </div>
+        </div>
       </section>
 
       <!-- Footer -->

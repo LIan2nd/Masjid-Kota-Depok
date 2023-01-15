@@ -154,6 +154,12 @@
                     <p>Ilhami</p>
                   </a>
                 </li>
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Daftar Masjid</p>
+                  </a>
+                </li>
               </ul>
             </li>
             <li class="nav-item">
@@ -189,11 +195,10 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="ml-5">Daftar Berita</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item"><a href="landing-page.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Admin</a></li>
                 <li class="breadcrumb-item active">Kelola Masjid</li>
               </ol>
@@ -204,8 +209,160 @@
       <!-- /.content-header -->
 
       <!-- Main content -->
-      <section class="content">
-        
+      <section class="content d-flex justify-content-center">
+        <div class="container m-1 p-3">
+          <div class="row m-3">
+              <div class="col-lg-2">
+                  <div class="text-lg-right mr-3">
+                      <label for="namaMasjid">Nama Masjid</label>
+                  </div>
+              </div>
+              <div class="col-lg-10">
+                  <input class="form-control" type="text" name="namaMasjid" id="namaMasjid"
+                      style="border-color: black;">
+              </div>
+          </div>
+          <div class="row m-3">
+              <div class="col-lg-2">
+                  <div class="text-lg-right mr-3">
+                      <label for="kecamatan">Kecamatan</label>
+                  </div>
+              </div>
+              <div class="col-lg-3">
+                  <select name="kecamatan" id="kecamatan"
+                      style="width: 250px; padding: 5px; border-color: black; border-radius: 5px;">
+                      <option value="beji">Beji</option>
+                      <option value="bojongSari">Bojong Sari</option>
+                      <option value="Cilodong">Cilodong</option>
+                      <option value="Cimanggis">Cimanggis</option>
+                      <option value="Cinere">Cinere</option>
+                      <option value="Cipayung">Cipayung</option>
+                      <option value="Limo">Limo</option>
+                      <option value="pancoranMas">Pancoran Mas</option>
+                      <option value="Sawangan">Sawangan</option>
+                      <option value="Tapos">Tapos</option>
+                  </select>
+              </div>
+              <div class="col-lg-2">
+                <div class="text-lg-center">
+                  <label for="kelurahan">Kelurahan</label>
+                </div>
+              </div>
+              <div class="col-lg">
+                  <select name="kelurahan" id="kelurahan"
+                      style="width: 250px; padding: 5px; border-color: black; border-radius: 5px;">
+                      <option value="Kukusan">Kukusan</option>
+                      <option value="Curug">Curug</option>
+                      <option value="sukaMaju">Suka Maju</option>
+                      <option value="Mekarsari">Mekarsari</option>
+                      <option value="pangkalanJati">Pangkalan Jati</option>
+                      <option value="pondokJaya">Pondok Jaya</option>
+                      <option value="Meruyung">Meruyung</option>
+                      <option value="depokJaya">Depok Jaya</option>
+                      <option value="pasirPutih">Pasir Putih</option>
+                      <option value="Jatijajar">Jatijajar</option>
+                  </select>
+              </div>
+          </div>
+          <div class="row m-3">
+              <div class="col-lg-2">
+                  <div class="text-lg-right mr-3">
+                      <label for="deskripsi">Deskripsi Fasilitas</label>
+                  </div>
+              </div>
+              <div class="col-lg-10">
+                  <textarea name="deskripsi" id="deskripsi" rows="3" class="form-control"
+                      style="border-color: black; border-radius: 5px;"></textarea>
+              </div>
+          </div>
+          <div class="row m-3">
+              <div class="col-lg-2">
+                  <div class="text-lg-right mr-3">
+                      <label for="namaDKM">Nama Pengurus DKM</label>
+                  </div>
+              </div>
+              <div class="col-lg-10">
+                  <input class="form-control" type="text" name="namaDKM" id="namaDKM"
+                      style="border-color: black; width: 50%;">
+              </div>
+          </div>
+          <div class="row m-3">
+              <div class="col-lg-2">
+                  <div class="text-lg-right mr-3">
+                      <label for="telepon">No HP/Telepon</label>
+                  </div>
+              </div>
+              <div class="col-lg-10">
+                  <input class="form-control" type="text" name="telepon" id="telepon"
+                      style="border-color: black; width: 50%;">
+              </div>
+          </div>
+          <div class="row m-3">
+              <div class="col-lg-2">
+                  <div class="text-lg-right mr-3">
+                      <label for="email">Email</label>
+                  </div>
+              </div>
+              <div class="col-lg-10">
+                  <input class="form-control" type="email" name="email" id="email"
+                      style="border-color: black; width: 50%;">
+              </div>
+          </div>
+          <div class="row m-3">
+              <div class="col-lg-2">
+                  <div class="text-lg-right mr-3">
+                      <label for="web">Alamat Web</label>
+                  </div>
+              </div>
+              <div class="col-lg-10">
+                  <input class="form-control" placeholder="http://" type="url" name="web" id="web"
+                      style="border-color: black; width: 75%;">
+              </div>
+          </div>
+          <div class="row m-3">
+              <div class="col-lg-2">
+                  <div class="text-lg-right mr-3">
+                      <label for="alamat">Alamat Lengkap</label>
+                  </div>
+              </div>
+              <div class="col-lg-10">
+                  <textarea name="alamat" id="alamat" rows="2" class="form-control"
+                      style="border-color: black;"></textarea>
+              </div>
+          </div>
+          <div class="row m-3">
+              <div class="col-lg-2">
+                  <div class="text-lg-right mr-3">
+                      <label for="latitude">Latitude, Longitude</label>
+                  </div>
+              </div>
+              <div class="col-lg-10">
+                  <input class="form-control" type="text" name="latitude" id="latitude"
+                      style="border-color: black; width: 50%;">
+              </div>
+          </div>
+          <div class="row m-3">
+            <div class="col-lg-2"></div>
+              <div class="col-lg-1 mr-3 mt-3 mb-3">
+                  <div class="text-lg-center">
+                      <button type="submit" class="btn btn-success"
+                          style="width: 100px; border-color: black;">Daftar</button>
+                  </div>
+              </div>
+              <div class="col-lg-1 mr-3 mt-3 mb-3">
+                <div class="text-lg-center">
+                  <button type="submit" class="btn btn-primary"
+                      style="width: 100px; border-color: black;">Update</button>
+                </div>
+              </div>
+              <div class="col-lg-1 mr-3 mt-3 mb-3">
+                <div class="text-lg-center">
+                  <button type="reset" class="btn btn-danger"
+                      style="width: 100px; border-color: black;">Batal</button>
+                </div>
+              </div>
+          </div>
+      </div>
       </section>
 
       <!-- Footer -->
