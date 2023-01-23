@@ -32,74 +32,68 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Local Styling -->
     <style>
-        * {
-            margin: 0;
+        #bg {
+            background-color: #345160;
+            box-shadow: 0px 9px 18px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 0px 9px 18px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 9px 18px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        .jumbotron {
+            background-color: #D9D9D9;
+            height: 550px;
+        }
+
+        .container-fluid {
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            overflow: hidden;
-        }
-
-        .bg {
-            background-image: url("Asset/Masjid.jpg");
-            height: 100%;
-            position: relative;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .container {
-            text-align: center;
-            padding: 30px;
-            margin-top: 25%;
-            margin-left: 50%;
-            margin-right: 0;
-            width: 550px;
-            color: #111;
-            background: transparent;
-            background-color: rgba(255, 255, 255, .2);
-            transform: translate(-50%, -50%)
+            margin: 0;
         }
     </style>
 </head>
 
 <body>
-    <div class="bg">
-        <header class="header sticky-top bg-transparent pt-2 shadow text-light-emphasis" data-bs-theme="dark">
-            <h1 class="text-center display-3">Direktori Data Masjid Kota Depok</h1>
-            <nav class="navbar navbar-expand-sm p-3 mb-4 rounded" data-bs-theme="dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse ml-2 col-11" id="navbarNav">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-                        <nav class="nav-link d-none d-sm-block">|</nav>
-                        <a class="nav-link" href="data-berita.html">Berita</a>
-                        <nav class="nav-link d-none d-sm-block">|</nav>
-                        <a class="nav-link" href="data-Masjid.html">Data Masjid</a>
-                        <nav class="nav-link d-none d-sm-block">|</nav>
-                        <a class="nav-link" href="registrasi-masjid.html">Registrasi</a>
-                        <nav class="nav-link d-none d-sm-block">|</nav>
-                        <a class="nav-link" href="tentangkami.html">Tentang Kami</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarNav"></div>
-                    <a class="nav-link" href="login-sistem.html">Login</a>
+    <header id="bg" class="header sticky-top pt-2 text-light-emphasis" data-bs-theme="dark">
+        <h1 class="text-center display-3">Direktori Data Masjid Kota Depok</h1>
+        <nav class="navbar navbar-expand-sm p-3 rounded">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-2 col-11" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    <nav class="nav-link d-none d-sm-block">|</nav>
+                    <a class="nav-link" href="data-berita.html">Berita</a>
+                    <nav class="nav-link d-none d-sm-block">|</nav>
+                    <a class="nav-link" href="data-Masjid.html">Data Masjid</a>
+                    <nav class="nav-link d-none d-sm-block">|</nav>
+                    <a class="nav-link" href="registrasi-masjid.html">Registrasi</a>
+                    <nav class="nav-link d-none d-sm-block">|</nav>
+                    <a class="nav-link" href="tentangkami.html">Tentang Kami</a>
                 </div>
-            </nav>
-        </header>
-        <div class="row" style="height: 100%">
-            <div class="container">
-                <div class="text-bold">
-                    <h1 class="display-3">Hallo, Web. Welcome to My Guys</h1>
+                <div class="collapse navbar-collapse" id="navbarNav"></div>
+                <a class="nav-link" href="login-sistem.html">Login</a>
+            </div>
+        </nav>
+    </header>
+    <section class="container-fluid">
+        <div class="row text-center">
+            <div class="col m-0">
+                <div class="jumbotron m-0 rounded-bottom-0">
+                    <img id="img" class="rounded-circle" src="asset/Masjid.jpg" alt="Gambar Masjid" width="320px"
+                        height="320px">
+                    <h1 class="display-4 mt-3">Hello, Web!</h1>
+                    <p class="lead">Ini adalah project UAS Kami, Kelompok 5. </p>
                 </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#d9d9d9" fill-opacity="1"
+                        d="M0,256L48,234.7C96,213,192,171,288,160C384,149,480,171,576,186.7C672,203,768,213,864,208C960,203,1056,181,1152,181.3C1248,181,1344,203,1392,213.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                    </path>
+                </svg>
+
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Javascript Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
