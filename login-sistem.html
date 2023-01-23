@@ -20,127 +20,126 @@
             <div class="collapse navbar-collapse" id="navbarNav"></div>
             <a class="nav-link m-3" href="login-sistem.html">Login</a>
         </nav>
-        </div>
-        <!-- Navbar + Header End -->
+    </div>
+    <!-- Navbar + Header End -->
 
-        <!-- Main -->
-        <section id="sect">
-            <div class="d-flex justify-content-center mb-4 pt-5">
-                <h1 class="mx-auto text-center">Login Sistem Direktori Data Masjid</h1>
-            </div>
-            <div class="d-flex justify-content-center">
-                <form class="mx-auto text-center"
-                    style="border: 1px solid gray; padding: 25px; background-color: whitesmoke;">
-                    <div class="form-group row">
-                        <label for="username" class="col-sm-2 col-form-label">Username:</label>
-                        <input type="text" class="form-control" id="username" name="username">
-                    </div>
-                    <div class="form-group row">
-                        <label for="password" class="col-sm-2 col-form-label">Password:</label>
-                        <input type="password" class="form-control" id="password" name="password">
-                    </div>
-                    <div class="row">
-                        <a onclick="onLogin()" class="btn btn-primary mt-3 mr-3 col-7" id="login">Login</a> <a
-                            href="registrasi-user.html" class="col-5 mt-4">Create User</a>
-                    </div>
-                    <button type="button" class="btn btn-success mt-5" data-bs-toggle="modal" data-bs-target="#admin"
-                        data-bs-whatever="UserWeb">Akun Admin</button>
-                    <div class="modal fade" id="admin" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5 display-3" id="exampleModalLabel">Akun Admin</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+    <!-- Main -->
+    <section id="sect">
+        <div class="d-flex justify-content-center mb-4 pt-5">
+            <h1 class="mx-auto text-center">Login Sistem Direktori Data Masjid</h1>
+        </div>
+        <div class="d-flex justify-content-center">
+            <form class="mx-auto text-center"
+                style="border: 1px solid gray; padding: 25px; background-color: whitesmoke;">
+                <div class="form-group row">
+                    <label for="username" class="col-sm-2 col-form-label">Username:</label>
+                    <input type="text" class="form-control" id="username" name="username">
+                </div>
+                <div class="form-group row">
+                    <label for="password" class="col-sm-2 col-form-label">Password:</label>
+                    <input type="password" class="form-control" id="password" name="password">
+                </div>
+                <div class="row">
+                    <a onclick="onLogin()" class="btn btn-primary mt-3 mr-3 col-7" id="login">Login</a> <a
+                        href="registrasi-user.html" class="col-5 mt-4">Create User</a>
+                </div>
+                <button type="button" class="btn btn-success mt-5" data-bs-toggle="modal" data-bs-target="#admin"
+                    data-bs-whatever="UserWeb">Akun Admin</button>
+                <div class="modal fade" id="admin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5 display-3" id="exampleModalLabel">Akun Admin</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <h3 class="col-sm-6 display-6">Username :</h3>
+                                    <h3 class="col-sm-6 display-6">admin</h3>
                                 </div>
-                                <div class="modal-body">
-                                    <div class="row">
-                                        <h3 class="col-sm-6 display-6">Username :</h3>
-                                        <h3 class="col-sm-6 display-6">admin</h3>
-                                    </div>
-                                    <div class="row">
-                                        <h3 class="col-sm-6 display-6">Password :</h3>
-                                        <h3 class="col-sm-6 display-6">admin123</h3>
-                                    </div>
+                                <div class="row">
+                                    <h3 class="col-sm-6 display-6">Password :</h3>
+                                    <h3 class="col-sm-6 display-6">admin123</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </form>
-            </div>
-            <!-- Main end -->
+                </div>
+            </form>
+        </div>
+        <!-- Main end -->
 
-            <!-- Footer -->
-            <div class="container">
-                <footer class="py-3 my-4">
-                    <ul class="nav justify-content-center border-bottom border-dark pb-3 mb-3">
-                    </ul>
-                    <p class="text-center text-muted"><strong>Developed By</strong> Mahasiswa @STT-NF kelompok 5</p>
-                </footer>
-            </div>
-            <!-- footer end -->
+        <!-- Footer -->
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom border-dark pb-3 mb-3">
+                </ul>
+                <p class="text-center text-muted"><strong>Developed By</strong> Mahasiswa @STT-NF kelompok 5</p>
+            </footer>
+        </div>
+        <!-- footer end -->
 
-        </section>
+    </section>
 
 
-        <!-- Script local -->
-        <script type="application/javascript">
-            let usernameInput = document.getElementById("username");
-            let passwordInput = document.getElementById("password");
+    <!-- Script local -->
+    <script type="application/javascript">
+        let usernameInput = document.getElementById("username");
+        let passwordInput = document.getElementById("password");
 
-            function onLogin() {
+        function onLogin() {
 
-                if (username.value == "" || password.value == "") {
-                    alert("Lengkapi form terlebih dahulu");
-                } else if (username.value == "admin" && password.value == "admin123") {
-                    alert("Selamat datang kembali, Admin")
-                    location.href = "admin.html";
-                } else if (username.value == "admin" && password.value != "admin123") {
-                    alert("Admin, Anda memasukkan password yang salah")
-                } else {
-                    alert("Terimakasih sudah Login");
-                    location.href = "data-berita.html";
-                }
+            if (username.value == "" || password.value == "") {
+                alert("Lengkapi form terlebih dahulu");
+            } else if (username.value == "admin" && password.value == "admin123") {
+                alert("Selamat datang kembali, Admin")
+                location.href = "admin.html";
+            } else if (username.value == "admin" && password.value != "admin123") {
+                alert("Admin, Anda memasukkan password yang salah")
+            } else {
+                alert("Terimakasih sudah Login");
+                location.href = "data-berita.html";
             }
-        </script>
-        <!-- script local end -->
+        }
+    </script>
+    <!-- script local end -->
 
-        <!-- script template -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-            crossorigin="anonymous"></script>
-        <!-- Javascript Admin LTE -->
-        <!-- jQuery -->
-        <script src="plugins/jquery/jquery.min.js"></script>
-        <!-- jQuery UI 1.11.4 -->
-        <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
-        <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-        <script>
-            $.widget.bridge('uibutton', $.ui.button)
-        </script>
-        <!-- Bootstrap 4 -->
-        <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <!-- ChartJS -->
-        <script src="plugins/chart.js/Chart.min.js"></script>
-        <!-- Sparkline -->
-        <script src="plugins/sparklines/sparkline.js"></script>
-        <!-- JQVMap -->
-        <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
-        <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-        <!-- jQuery Knob Chart -->
-        <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
-        <!-- daterangepicker -->
-        <script src="plugins/moment/moment.min.js"></script>
-        <script src="plugins/daterangepicker/daterangepicker.js"></script>
-        <!-- Tempusdominus Bootstrap 4 -->
-        <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-        <!-- Summernote -->
-        <script src="plugins/summernote/summernote-bs4.min.js"></script>
-        <!-- overlayScrollbars -->
-        <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-        <!-- AdminLTE App -->
-        <script src="dist/js/adminlte.js"></script>
+    <!-- script template -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- Javascript Admin LTE -->
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="plugins/moment/moment.min.js"></script>
+    <script src="plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.js"></script>
 </body>
 
 </html>
