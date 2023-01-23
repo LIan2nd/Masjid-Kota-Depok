@@ -9,52 +9,56 @@
     <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="text-center">
     <!-- Main -->
-    <div class="d-flex justify-content-center mb-4 mt-5">
-        <h1 class="mx-auto text-center">Registrasi User</h1>
-    </div>
-    <div class="d-flex justify-content-center">
-        <form class="mx-auto text-center" style="border: 1px solid gray; padding: 25px;">
-            <div class="form-group row">
-                <label for="namaLengkap" class="col-sm-5 col-form-label">Nama Lengkap :</label>
-                <input type="text" class="form-control" id="namaLengkap" name="namaLengkap">
-            </div>
-            <div class="form-group row">
-                <label for="email" class="col-sm-3 col-form-label">Email :</label>
-                <input type="email" class="form-control" id="email" name="email">
-            </div>
-            <div class="form-group row">
-                <label for="username" class="col-sm-4 col-form-label">Username :</label>
-                <input type="text" class="form-control" id="username" name="username">
-            </div>
-            <div class="form-group row">
-                <label for="password" class="col-sm-4 col-form-label">Password :</label>
-                <input type="password" class="form-control" id="password" name="password">
-            </div>
-            <div class="form-group row">
-                <label for="cekPassword" class="col-sm-5 col-form-label">Cek Password :</label>
-                <input type="password" class="form-control" id="cekPassword" name="cekPassword">
-            </div>
-            <div class="row">
-                <div class="col-sm-7"></div>
-                <a onclick="onDaftar()" class="btn btn-primary mt-3 col-sm-5" id="daftar">Daftar</a>
-            </div>
-        </form>
-    </div>
-    <!-- Main end -->
+    <div id="sect">
+        <div class="d-flex justify-content-center mb-4 pt-5">
+            <h1 class="mx-auto text-center">Registrasi User</h1>
+        </div>
+        <div class="d-flex justify-content-center">
+            <form class="mx-auto text-center" style="border: 1px solid gray; padding: 25px;">
+                <div class="form-group row">
+                    <label for="namaLengkap" class="col-sm-5 col-form-label">Nama Lengkap :</label>
+                    <input type="text" class="form-control" id="namaLengkap" name="namaLengkap">
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-sm-3 col-form-label">Email :</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="form-group row">
+                    <label for="username" class="col-sm-4 col-form-label">Username :</label>
+                    <input type="text" class="form-control" id="username" name="username">
+                </div>
+                <div class="form-group row">
+                    <label for="password" class="col-sm-4 col-form-label">Password :</label>
+                    <input type="password" class="form-control" id="password" name="password">
+                </div>
+                <div class="form-group row">
+                    <label for="cekPassword" class="col-sm-5 col-form-label">Cek Password :</label>
+                    <input type="password" class="form-control" id="cekPassword" name="cekPassword">
+                </div>
+                <div class="row">
+                    <div class="col-sm-7"></div>
+                    <a onclick="onDaftar()" class="btn btn-primary mt-3 col-sm-5" id="daftar">Daftar</a>
+                </div>
+            </form>
+        </div>
 
-    <!-- Footer -->
-    <div class="container mb-0">
-        <footer class="py-3 my-4">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            </ul>
-            <p class="text-center text-muted"><strong>Developed By</strong> Mahasiswa @STT-NF kelompok 5</p>
-        </footer>
+        <!-- Main end -->
+
+        <!-- Footer -->
+        <div class="container mb-0">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom border-dark pb-3 mb-3">
+                </ul>
+                <p class="text-center text-muted"><strong>Developed By</strong> Mahasiswa @STT-NF kelompok 5</p>
+            </footer>
+        </div>
+        <!-- footer end -->
     </div>
-    <!-- footer end -->
 
     <!-- Script local -->
     <script type="application/javascript">
@@ -123,4 +127,5 @@
     <script src="dist/js/adminlte.js"></script>
 </body>
 <!-- Fix -->
+
 </html>
