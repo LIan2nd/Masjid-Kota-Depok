@@ -37,7 +37,7 @@
     <!-- Ini bagian atas -->
     <div id="bg" class="sticky-top pt-2 text-light" data-bs-theme="dark">
         <h1 class="text-center display-3">Direktori Data Masjid Kota Depok</h1>
-        <nav class="navbar navbar-expand-sm p-3 mb-4 rounded">
+        <nav class="navbar navbar-expand-sm p-3 rounded">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -63,182 +63,184 @@
 
     <!-- Main -->
     <!-- Breadcrumb -->
-    <div class="m-3">
-        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
-            aria-label="breadcrumb" class="float-right mr-5">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Registrasi</li>
-            </ol>
-        </nav>
-    </div>
-    <!-- Breadcrumb end -->
-    <div class="m-3">
-        <div class="row">
-            <div class="col-lg-12"><a href="registrasi-masjid.html">Registrasi Masjid Anda</a></div>
+    <div id="sect" class="me-0">
+        <div class="pt-5">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                aria-label="breadcrumb" class="float-right mr-5">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Registrasi</li>
+                </ol>
+            </nav>
         </div>
-    </div>
-    <!-- Form Registrasii -->
-    <div class="ml-4 mr-4 pl-3 pt-1 mb-0">
-        <h5>Form Registrasi Masjid</h5>
-    </div>
-    <div class="d-flex justify-content-center border border-1 ml-4 mr-4">
-        <div class="container m-3 p-3">
-            <div class="row m-3">
-                <div class="col-lg-2">
-                    <div class="text-lg-right mr-3">
-                        <label for="namaMasjid">Nama Masjid</label>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <input class="form-control" type="text" name="namaMasjid" id="namaMasjid"
-                        style="border-color: black;">
-                </div>
-            </div>
-            <div class="row m-3">
-                <div class="col-lg-2">
-                    <div class="text-lg-right mr-3">
-                        <label for="kecamatan">Kecamatan</label>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <select name="kecamatan" id="kecamatan"
-                        style="width: 250px; padding: 5px; border-color: black; border-radius: 5px;">
-                        <option value="beji">Beji</option>
-                        <option value="bojongSari">Bojong Sari</option>
-                        <option value="Cilodong">Cilodong</option>
-                        <option value="Cimanggis">Cimanggis</option>
-                        <option value="Cinere">Cinere</option>
-                        <option value="Cipayung">Cipayung</option>
-                        <option value="Limo">Limo</option>
-                        <option value="pancoranMas">Pancoran Mas</option>
-                        <option value="Sawangan">Sawangan</option>
-                        <option value="Tapos">Tapos</option>
-                    </select>
-                </div>
-                <div class="col-lg-2">
-                    <label for="kelurahan">Kelurahan</label>
-                </div>
-                <div class="col-lg">
-                    <select name="kelurahan" id="kelurahan"
-                        style="width: 250px; padding: 5px; border-color: black; border-radius: 5px;">
-                        <option value="Kukusan">Kukusan</option>
-                        <option value="Curug">Curug</option>
-                        <option value="sukaMaju">Suka Maju</option>
-                        <option value="Mekarsari">Mekarsari</option>
-                        <option value="pangkalanJati">Pangkalan Jati</option>
-                        <option value="pondokJaya">Pondok Jaya</option>
-                        <option value="Meruyung">Meruyung</option>
-                        <option value="depokJaya">Depok Jaya</option>
-                        <option value="pasirPutih">Pasir Putih</option>
-                        <option value="Jatijajar">Jatijajar</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row m-3">
-                <div class="col-lg-2">
-                    <div class="text-lg-right mr-3">
-                        <label for="deskripsi">Deskripsi Fasilitas</label>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <textarea name="deskripsi" id="deskripsi" rows="3" class="form-control"
-                        style="border-color: black; border-radius: 5px;"></textarea>
-                </div>
-            </div>
-            <div class="row m-3">
-                <div class="col-lg-2">
-                    <div class="text-lg-right mr-3">
-                        <label for="namaDKM">Nama Pengurus DKM</label>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <input class="form-control" type="text" name="namaDKM" id="namaDKM"
-                        style="border-color: black; width: 50%;">
-                </div>
-            </div>
-            <div class="row m-3">
-                <div class="col-lg-2">
-                    <div class="text-lg-right mr-3">
-                        <label for="telepon">No HP/Telepon</label>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <input class="form-control" type="text" name="telepon" id="telepon"
-                        style="border-color: black; width: 50%;">
-                </div>
-            </div>
-            <div class="row m-3">
-                <div class="col-lg-2">
-                    <div class="text-lg-right mr-3">
-                        <label for="email">Email</label>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <input class="form-control" type="email" name="email" id="email"
-                        style="border-color: black; width: 50%;">
-                </div>
-            </div>
-            <div class="row m-3">
-                <div class="col-lg-2">
-                    <div class="text-lg-right mr-3">
-                        <label for="web">Alamat Web</label>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <input class="form-control" placeholder="http://" type="url" name="web" id="web"
-                        style="border-color: black; width: 75%;">
-                </div>
-            </div>
-            <div class="row m-3">
-                <div class="col-lg-2">
-                    <div class="text-lg-right mr-3">
-                        <label for="alamat">Alamat Lengkap</label>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <textarea name="alamat" id="alamat" rows="2" class="form-control"
-                        style="border-color: black;"></textarea>
-                </div>
-            </div>
-            <div class="row m-3">
-                <div class="col-lg-2">
-                    <div class="text-lg-right mr-3">
-                        <label for="latitude">Latitude, Longitude</label>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <input class="form-control" type="text" name="latitude" id="latitude"
-                        style="border-color: black; width: 50%;">
-                </div>
-            </div>
-            <div class="row m-3">
-                <div class="col-lg-2">
-                    <div class="text-lg-right">
-                        <button type="submit" class="btn btn-success mb-2"
-                            style="width: 100px; border-color: black;">Daftar</button>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <button type="reset" class="btn btn-danger"
-                        style="width: 100px; border-color: black;">Batal</button>
-                </div>
+        <!-- Breadcrumb end -->
+        <div class="m-3">
+            <div class="row">
+                <div class="col-lg-12"><a href="registrasi-masjid.html">Registrasi Masjid Anda</a></div>
             </div>
         </div>
-    </div>
-    <!-- Form Registrasi end -->
+        <!-- Form Registrasii -->
+        <div class="ml-4 mr-4 pl-3 pt-1 mb-0">
+            <h5>Form Registrasi Masjid</h5>
+        </div>
+        <div class="d-flex justify-content-center border border-1 border-dark ml-4 mr-4">
+            <div class="container m-3 p-3">
+                <div class="row m-3">
+                    <div class="col-lg-2">
+                        <div class="text-lg-right mr-3">
+                            <label for="namaMasjid">Nama Masjid</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <input class="form-control" type="text" name="namaMasjid" id="namaMasjid"
+                            style="border-color: black;">
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-lg-2">
+                        <div class="text-lg-right mr-3">
+                            <label for="kecamatan">Kecamatan</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <select name="kecamatan" id="kecamatan"
+                            style="width: 250px; padding: 5px; border-color: black; border-radius: 5px;">
+                            <option value="beji">Beji</option>
+                            <option value="bojongSari">Bojong Sari</option>
+                            <option value="Cilodong">Cilodong</option>
+                            <option value="Cimanggis">Cimanggis</option>
+                            <option value="Cinere">Cinere</option>
+                            <option value="Cipayung">Cipayung</option>
+                            <option value="Limo">Limo</option>
+                            <option value="pancoranMas">Pancoran Mas</option>
+                            <option value="Sawangan">Sawangan</option>
+                            <option value="Tapos">Tapos</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2">
+                        <label for="kelurahan">Kelurahan</label>
+                    </div>
+                    <div class="col-lg">
+                        <select name="kelurahan" id="kelurahan"
+                            style="width: 250px; padding: 5px; border-color: black; border-radius: 5px;">
+                            <option value="Kukusan">Kukusan</option>
+                            <option value="Curug">Curug</option>
+                            <option value="sukaMaju">Suka Maju</option>
+                            <option value="Mekarsari">Mekarsari</option>
+                            <option value="pangkalanJati">Pangkalan Jati</option>
+                            <option value="pondokJaya">Pondok Jaya</option>
+                            <option value="Meruyung">Meruyung</option>
+                            <option value="depokJaya">Depok Jaya</option>
+                            <option value="pasirPutih">Pasir Putih</option>
+                            <option value="Jatijajar">Jatijajar</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-lg-2">
+                        <div class="text-lg-right mr-3">
+                            <label for="deskripsi">Deskripsi Fasilitas</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <textarea name="deskripsi" id="deskripsi" rows="3" class="form-control"
+                            style="border-color: black; border-radius: 5px;"></textarea>
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-lg-2">
+                        <div class="text-lg-right mr-3">
+                            <label for="namaDKM">Nama Pengurus DKM</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <input class="form-control" type="text" name="namaDKM" id="namaDKM"
+                            style="border-color: black; width: 50%;">
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-lg-2">
+                        <div class="text-lg-right mr-3">
+                            <label for="telepon">No HP/Telepon</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <input class="form-control" type="text" name="telepon" id="telepon"
+                            style="border-color: black; width: 50%;">
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-lg-2">
+                        <div class="text-lg-right mr-3">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <input class="form-control" type="email" name="email" id="email"
+                            style="border-color: black; width: 50%;">
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-lg-2">
+                        <div class="text-lg-right mr-3">
+                            <label for="web">Alamat Web</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <input class="form-control" placeholder="http://" type="url" name="web" id="web"
+                            style="border-color: black; width: 75%;">
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-lg-2">
+                        <div class="text-lg-right mr-3">
+                            <label for="alamat">Alamat Lengkap</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <textarea name="alamat" id="alamat" rows="2" class="form-control"
+                            style="border-color: black;"></textarea>
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-lg-2">
+                        <div class="text-lg-right mr-3">
+                            <label for="latitude">Latitude, Longitude</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <input class="form-control" type="text" name="latitude" id="latitude"
+                            style="border-color: black; width: 50%;">
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-lg-2">
+                        <div class="text-lg-right">
+                            <button type="submit" class="btn btn-success mb-2"
+                                style="width: 100px; border-color: black;">Daftar</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <button type="reset" class="btn btn-danger"
+                            style="width: 100px; border-color: black;">Batal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Form Registrasi end -->
 
 
-    <!-- Main end -->
-    <!-- Footer -->
-    <div class="container">
-        <footer class="py-3 my-4">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            </ul>
-            <p class="text-center text-muted"><strong>Developed By</strong> Mahasiswa @STT-NF kelompok 5</p>
-        </footer>
+        <!-- Main end -->
+        <!-- Footer -->
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom border-dark-subtle pb-3 mb-3">
+                </ul>
+                <p class="text-center text-muted"><strong>Developed By</strong> Mahasiswa @STT-NF kelompok 5</p>
+            </footer>
+        </div>
+        <!-- footer end -->
     </div>
-    <!-- footer end -->
 
 
     <!-- Javascript Bootstrap -->
